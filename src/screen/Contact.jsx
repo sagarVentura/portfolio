@@ -31,7 +31,7 @@ function Contact() {
       // Define a regular expression for validating an email address
       const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-      let API="http://localhost:5000"
+      let API="https://api.venturatechnologies.in"
       // Test the email against the regular expression
       let result = re.test(String(email).toLowerCase());
       if (result) {
@@ -100,10 +100,10 @@ function Contact() {
         oXHR.send();
       }
        if(!mailsend){
-       // fetchData();
+       fetchData();
         pdfDownload();
         setMailSend(true);  
-        toast.success('PDF is DownLoading', {
+        toast.success('PDF is Downloaded', {
           position: "top-right",
           autoClose: 4000,
           hideProgressBar: true,
@@ -117,7 +117,7 @@ function Contact() {
        }
        else{
         pdfDownload();
-        toast.success('PDF is downLoading', {
+        toast.success('PDF is downLoaded', {
           position: "top-right",
           autoClose: 4000,
           hideProgressBar: true,

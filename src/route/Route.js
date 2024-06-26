@@ -9,6 +9,7 @@ import Work from "../screen/Work";
 import { useNavigate } from "react-router-dom";
 import DetailWork from "../screen/DetailWork";
 import Portfolio from "../screen/Portfolio";
+import CodeTesting from "../screen/codeTesting";
 
 
 
@@ -40,6 +41,10 @@ import Portfolio from "../screen/Portfolio";
       {
         path:'/resume/:company',
         element:<DetailWork/>
+      },
+      {
+        path:'/code',
+        element:<CodeTesting/>
       },
       {
         path:"*",

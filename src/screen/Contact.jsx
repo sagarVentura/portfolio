@@ -31,7 +31,7 @@ function Contact() {
       // Define a regular expression for validating an email address
       const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-      let API="https://api.venturatechnologies.in"
+      let API="https://api.sagarpatil.tech"
       // Test the email against the regular expression
       let result = re.test(String(email).toLowerCase());
       if (result) {

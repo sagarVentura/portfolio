@@ -1,6 +1,3 @@
-import webDevelopment from '../assets/images/icon-dev.svg';
-import mobileDevelopment from '../assets/images/icon-app.svg';
-import { FaCss3Alt ,FaReact,FaAws } from "react-icons/fa6";
 import cssIcon from '../assets/images/stackIcon/css.png';
 import reactIcon from '../assets/images/stackIcon/react.png';
 import awsIcon from '../assets/images/stackIcon/aws.png';
@@ -9,9 +6,12 @@ import nodeIcon from '../assets/images/stackIcon/node.png';
 import mongoIcon from '../assets/images/stackIcon/mongo.png';
 import sqlIcon from '../assets/images/stackIcon/sql.png';
 import htmlIcon from '../assets/images/stackIcon/htmk.png';
+import playStoreIcon from '../assets/images/stackIcon/androidStore.png';
+import appleStoreIcon from '../assets/images/stackIcon/appleStore.png'
 import cloudDevelopmentIcon from '../assets/images/stackIcon/cloudDevelopment.png';
 import mobileDevelopmentIcon from '../assets/images/stackIcon/mobile.png';
 import webDevelopmentIcon from '../assets/images/stackIcon/webDevelopment.png';
+
 
 
 
@@ -30,7 +30,7 @@ let serviceList=[{
   alt:'Mobile development',
   title:'Mobile development',
   discription:'',
-  stack:[{url:reactIcon,Heading:"React Native",className:"reactIcon"}]
+  stack:[{url:reactIcon,Heading:"React Native",className:"reactIcon"},{url:playStoreIcon,Heading:'Play Store'},{url:appleStoreIcon,Heading:'Apple Store'}]
 },
 {
   src:cloudDevelopmentIcon,

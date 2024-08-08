@@ -8,6 +8,7 @@ import sqlIcon from '../assets/images/stackIcon/sql.png';
 import htmlIcon from '../assets/images/stackIcon/htmk.png';
 import playStoreIcon from '../assets/images/stackIcon/androidStore.png';
 import appleStoreIcon from '../assets/images/stackIcon/appleStore.png'
+import firebaseIcon from '../assets/images/stackIcon/firebase.png';
 import cloudDevelopmentIcon from '../assets/images/stackIcon/cloudDevelopment.png';
 import mobileDevelopmentIcon from '../assets/images/stackIcon/mobile.png';
 import webDevelopmentIcon from '../assets/images/stackIcon/webDevelopment.png';
@@ -30,14 +31,14 @@ let serviceList=[{
   alt:'Mobile development',
   title:'Mobile development',
   discription:'',
-  stack:[{url:reactIcon,Heading:"React Native",className:"reactIcon"},{url:playStoreIcon,Heading:'Play Store'},{url:appleStoreIcon,Heading:'Apple Store'}]
+  stack:[{url:reactIcon,Heading:"React Native",className:"reactIcon"},{url:playStoreIcon,Heading:'Play Store',className:"reactIcon"},{url:appleStoreIcon,Heading:'Apple Store',className:"reactIcon"}]
 },
 {
   src:cloudDevelopmentIcon,
   alt:'Cloud',
   title:'Cloud',
   discription:'',
-  stack:[{url:awsIcon,Heading:"AWS",className:'awsIcon'}]
+  stack:[{url:awsIcon,Heading:"AWS",className:'awsIcon'},{url:firebaseIcon,className:"reactIcon",Heading:'Firebase'}]
 },
 ]
 

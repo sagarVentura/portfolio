@@ -10,6 +10,8 @@ import { useNavigate } from "react-router-dom";
 import DetailWork from "../screen/DetailWork";
 import Portfolio from "../screen/Portfolio";
 import CodeTesting from "../screen/codeTesting";
+import CustomSelectbox from "../component/reusableComponent/selectbox/SelectBox";
+import SelectBoxComponent from "../component/reusableComponent/selectbox/SelectBoxComponent";
 
 
 
@@ -37,6 +39,10 @@ import CodeTesting from "../screen/codeTesting";
       {
         path:'/portfolio',
         element:<Portfolio/>
+      },
+      {
+        path:'/portfolio/custom/selectbox',
+        element:<SelectBoxComponent/>
       },
       {
         path:'/resume/:company',

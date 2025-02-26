@@ -52,11 +52,11 @@ function About() {
         </header>
         <section className="about-text">
           <p className='landingIntroduction'>
-          Experienced React Developer with 1.7 years of expertise in mobile and web development. Proficient in crafting responsive and user-friendly interfaces using React and React Native, while seamlessly integrating robust backend solutions. 
+          Experienced React Developer with  2 years of expertise in mobile and web development. Proficient in crafting responsive and user-friendly interfaces using React and React Native, while seamlessly integrating robust backend solutions. 
           </p>
 
           <p className='landingIntroduction'>
-          Skilled in managing databases and deploying scalable, reliable applications on AWS. Specializes in developing full-stack applications, utilizing JavaScript frameworks like React and SAP UI5 for front-end development and Node.js for server-side logic. Passionate about delivering high-quality software solutions throughout the project lifecycle."
+          Skilled in managing databases and deploying scalable, reliable applications on AWS. Specializes in developing full-stack applications, utilizing JavaScript frameworks like React and SAP UI5 for front-end development and Node.js for server-side logic. Passionate about delivering high-quality software solutions throughout the project lifecycle.
              </p>
         </section>
 

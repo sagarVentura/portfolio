@@ -6,19 +6,20 @@ import './selectbox.css'
 
 const ChevronDown=(props)=>{
     return (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16" {...props}>
-    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+    <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
   </svg>)
   
 };
-const SelectedInput = ({ searchValue, onChange,isSearchable }) => {
+const SelectedInput = ({ searchValue, onChange,isSearchable ,setShowMenu}) => {
     return (
         <input
             type="text"
             value={searchValue || ""}
-            className="!border-2 w-full h-full p-2  cursor-pointer"
+            className=" border-none w-full h-full p-2  cursor-pointer"
             onChange={onChange}
             disabled={!isSearchable}
             placeholder="select ..."
+            onFocus={()=>{setShowMenu(true)}}
         />
     );
 };
@@ -126,7 +127,7 @@ Addition of a new event listener: A new event listener is added with the updated
    
     return (
         <div
-            className="custom--dropdown-container w-full flex items-center h-full gap-2 bg-white  max-w-[400px]"
+            className="custom--dropdown-container w-full flex items-center  gap-2 bg-transparent  h-[50px]"
             ref={cellRef} 
         >
             <div className="flex-1 h-full"  >
@@ -135,12 +136,13 @@ Addition of a new event listener: A new event listener is added with the updated
                     selectedOption={selectedOption}
                     onChange={handleInputChange}
                     isSearchable={isSearchable}
+                    setShowMenu={setShowMenu}
                 />
             </div>
 
-            <div className="dropdown-tool pr-2 h-full flex items-center bg-white"  onClick={handleButtonClick} >
+            <div className="dropdown-tool px-2 h-full flex items-center bg-[#F7F7F7]  rounded-r-md rounded-l-none "  onClick={handleButtonClick} >
                     <ChevronDown
-                        className={`cursor-pointer text-black ${showMenu && "translate"}`}
+                        className={`cursor-pointer  text-black font-bold ${showMenu && "translate"}`}
                         width={"20px"}
                         aria-expanded={showMenu}
                     />
@@ -160,7 +162,7 @@ Addition of a new event listener: A new event listener is added with the updated
                         {renderOption.length ? renderOption.map((option, index) => (
                             <div className="dropdown-item" key={index}>{option.label}</div>
                         )) :
-                            <div className="p-2 my-1 text-center border-b-2 border-tableborder">No Option</div>}
+                            <div className="p-2 my-1 text-center  border-tableborder">No Option</div>}
                     </div>
                     }
         </div>

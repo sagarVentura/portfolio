@@ -5,7 +5,8 @@
     border-radius: 6px;
     cursor: pointer;
     width: 100%;
-    height: 100%;
+    border: 1px solid  #474A4C !important;
+
 }
 
 .custom--dropdown-container .dropdown-input {
@@ -148,7 +149,5 @@
     margin-left: 5px;
 }
 
-input::placeholder {
-    color: lightskyblue; /* Change this to your desired color */
-    opacity: 1; /* Optional: Adjust opacity if needed */
-}
+
+

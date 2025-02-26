@@ -78,50 +78,58 @@ function SelectBoxComponent() {
         }
     ])
 
-    const [project,setProject]=useState(null);
-    const [taskList,setTaskList]=useState([]);
+    const [project, setProject] = useState(null);
+    const [taskList, setTaskList] = useState([]);
 
-    const[task,setTask]=useState(null);
+    const [task, setTask] = useState(null);
 
 
 
-    useEffect(()=>{
-        if(project){
-            setTaskList(()=>{
-               return option.find((projectObj)=>projectObj.id==project).task;
+    useEffect(() => {
+        if (project) {
+            setTaskList(() => {
+                return option.find((projectObj) => projectObj.id == project).task;
             });
             setTask(null)
         }
-    },[project])
+    }, [project])
 
-    const onChangeSelect=(project)=>{
+    const onChangeSelect = (project) => {
         setProject(project)
     }
 
-    const onChangetask=(task)=>{
+    const onChangetask = (task) => {
         setTask(task)
     }
     return (
-        <div className="flex flex-wrap gap-10 justify-center items-center" >
-            <CustomSelectbox
-                placeHolder='Please select...'
-                onChange={onChangeSelect}
-                list={option}
-                selected={project}
-                isSearchable
-                isMulti
-                Key="name"
-            />
+        <div className="flex flex-wrap gap-10 justify-start items-start about active outlet flex-col sm:flex-row border-2  p-2 h-full" >
+            <div className=" flex flex-col flex-1 w-full">
+                <label className="required-label" htmlFor="endDate">Project Type</label>
 
-<CustomSelectbox
-                placeHolder='Please select...'
-                onChange={onChangetask}
-                list={taskList}
-                selected={task}
-                isSearchable
-                isMulti
-                Key="name"
-            />
+                <CustomSelectbox
+                    placeHolder='Please select...'
+                    onChange={onChangeSelect}
+                    list={option}
+                    selected={project}
+                    isSearchable
+                    isMulti
+                    Key="name"
+                />
+            </div>
+
+            <div className="flex flex-col flex-1 w-full">
+                <label className="" htmlFor="endDate">Tasklist</label>
+                <CustomSelectbox
+                    placeHolder='Please select...'
+                    onChange={onChangetask}
+                    list={taskList}
+                    selected={task}
+                    isSearchable
+                    isMulti
+                    Key="name"
+                />
+            </div>
+
         </div>
     )
 }

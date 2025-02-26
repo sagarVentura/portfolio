@@ -2491,4 +2491,33 @@
       font-size:20px
     }
   }
+
+
+  input{
+	outline: none !important;
+	border-radius: 6px !important;
+	padding: 4px !important;
+	padding-left: 6px !important;
+	font-size: 16px !important;
+	color: #d0d0d0 !important;
+	background:transparent ;
+}
+  
+.required-label::after {
+  content: " *";
+  color: red;
+}
+
+label{
+  font-size: 16px;
+  font-weight:bold ;
+color:#969696;
+margin-bottom: 4px !important;
+
+}
+
+.cutomCompoent{
+  border: 2px solid ;
+
+}
   

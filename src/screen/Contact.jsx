@@ -163,36 +163,11 @@ function ViewResume(){
 
 }
   return (
-    <div className="about active outlet" style={{position:'relative'}}>
+    <div className="about active "  id="contact" style={{position:'relative'}}>
       <header>
         <h2 className="h2 article-title">Contact</h2>
       </header>
-        {/* <div className="input-form-wrapper">
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          className="form-input"
-          ref={nameRef}
-        />
-
-        <input
-          type="email"
-          placeholder="Email Address"
-          name="email"
-          id=""
-          className="form-input"
-          ref={emailRef}
-        />
-        </div>
-        <textarea
-          name=""
-          id="message"
-          class="form-input"
-          placeholder="Message"
-          ref={messageRef}
-        ></textarea> */}
-
+      
 <div style={{display:'flex', justifyContent:'start'}}>
         <button onClick={ViewResume} className="form-btn" style={{marginLeft:'0px'}}>
           <span >

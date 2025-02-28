@@ -12,51 +12,54 @@ import Portfolio from "../screen/Portfolio";
 import CodeTesting from "../screen/codeTesting";
 import CustomSelectbox from "../component/reusableComponent/selectbox/SelectBox";
 import SelectBoxComponent from "../component/reusableComponent/selectbox/SelectBoxComponent";
+import MainScreen from "../screen/MainScreen";
 
 
 
 
   let route=createBrowserRouter([{
     path:'/',
-    element:<Layout/>,
-    children:[
-      {
-        path:"/",
-        element:<About/>
-      },
-      {
-        path:"/about",
-        element:<About/>
-      },
-      {
-        path:'/resume',
-        element:<Resume/>
-      },
-      {
-        path:'/contact',
-        element:<Contact/>
-      },
-      {
-        path:'/portfolio',
-        element:<Portfolio/>
-      },
-      {
-        path:'/portfolio/custom/selectbox',
-        element:<SelectBoxComponent/>
-      },
-      {
-        path:'/resume/:company',
-        element:<DetailWork/>
-      },
-      {
-        path:'/code',
-        element:<CodeTesting/>
-      },
-      {
-        path:"*",
-        element:<Home/>
-      },
-    ]
+    element:<Layout/>
+    //element:<Layout/>,
+
+    // children:[
+    //   {
+    //     path:"/",
+    //     element:<About/>
+    //   },
+    //   {
+    //     path:"/about",
+    //     element:<About/>
+    //   },
+    //   {
+    //     path:'/resume',
+    //     element:<Resume/>
+    //   },
+    //   {
+    //     path:'/contact',
+    //     element:<Contact/>
+    //   },
+    //   {
+    //     path:'/portfolio',
+    //     element:<Portfolio/>
+    //   },
+    //   {
+    //     path:'/portfolio/custom/selectbox',
+    //     element:<SelectBoxComponent/>
+    //   },
+    //   {
+    //     path:'/resume/:company',
+    //     element:<DetailWork/>
+    //   },
+    //   {
+    //     path:'/code',
+    //     element:<CodeTesting/>
+    //   },
+    //   {
+    //     path:"*",
+    //     element:<Home/>
+    //   },
+    // ]
   }]);
 
   function Home(){

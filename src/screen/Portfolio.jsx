@@ -4,10 +4,12 @@ import Button from "../component/reusableComponent/Button";
 
 function Portfolio() {
   return (
-    <div className="about active outlet" style={{height:'100vh',display:"flex",justifyContent:'center',}}>
-      {/* <div style={{fontSize:'1.5em', color:'white'}}>This page is under construction.....</div> */}
+    <div className="about active " id="project" style={{display:"flex",justifyContent:'center',}}>
       <div className="w-full ">
-        <h2  className="h2 mb-2"> Custom Component</h2>
+      <h2 className="h2 article-title">Project</h2>
+
+
+        <h2  className="h3 mb-2"> Custom Component</h2>
         <CustomComponent/>
         
 

@@ -81,7 +81,7 @@ function DetailWork() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="about active outlet  workFont">
+    <div className="about active   workFont">
       <header>
         <h2 className="h2 article-title">Detail Work</h2>
       </header>

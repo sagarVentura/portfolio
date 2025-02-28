@@ -6,7 +6,7 @@ function Resume() {
 let scrollRef=useRef()
   
   return (
-     <div className='about active outlet'  ref={scrollRef}>
+     <div className='about active ' id="resume"  ref={scrollRef}>
   <header>
       <h2 className="h2 article-title">Resume</h2>
     </header>

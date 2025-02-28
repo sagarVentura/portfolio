@@ -46,7 +46,7 @@ let serviceList=[{
 function About() {
   return (
     
-    <div className='about active outlet'>
+    <div className='about active ' id='about'>
       <header>
           <h2 className="h2 article-title">About me</h2>
         </header>

@@ -2348,7 +2348,7 @@
       align-items: center;
     }
      .SecondContainer {
-      flex-direction: row;
+      flex-direction: column;
     }
   
     nav{
@@ -2407,13 +2407,12 @@
     }
   
     .main-content {
-      min-width: 75%;
-      width: 75%;
+      width: 100%;
       margin: 0;
     }
   
     .navbar-style{
-      width: 75%;
+      width: 100%;
     }
     /**
      * SIDEBAR

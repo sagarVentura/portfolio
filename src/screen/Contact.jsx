@@ -159,7 +159,8 @@ function Contact() {
 
 
 function ViewResume(){
-  window.open("https://drive.google.com/file/d/14ocJDGpwGsfBKTcnII-cSH9jjVPW0uie/view?usp=sharing", "_blank")
+  window.open("https://drive.google.com/file/d/1iN9GLiZPqd11LRVtGJ6uU14OOyxCVYdf/view?usp=sharing", "_blank")
+
 
 }
   return (

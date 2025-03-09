@@ -19,14 +19,14 @@ import MainScreen from "../screen/MainScreen";
 
   let route=createBrowserRouter([{
     path:'/',
-    element:<Layout/>
+    element:<Layout/>,
     //element:<Layout/>,
 
-    // children:[
-    //   {
-    //     path:"/",
-    //     element:<About/>
-    //   },
+  children:[
+      {
+        path:"/",
+        element:<MainScreen/>
+      },
     //   {
     //     path:"/about",
     //     element:<About/>
@@ -43,23 +43,23 @@ import MainScreen from "../screen/MainScreen";
     //     path:'/portfolio',
     //     element:<Portfolio/>
     //   },
-    //   {
-    //     path:'/portfolio/custom/selectbox',
-    //     element:<SelectBoxComponent/>
-    //   },
-    //   {
-    //     path:'/resume/:company',
-    //     element:<DetailWork/>
-    //   },
+       {
+        path:'/portfolio/custom/selectbox',
+        element:<SelectBoxComponent/>
+      },
+       {
+        path:'/:company',
+        element:<DetailWork/>
+      },
     //   {
     //     path:'/code',
     //     element:<CodeTesting/>
     //   },
-    //   {
-    //     path:"*",
-    //     element:<Home/>
-    //   },
-    // ]
+      {
+        path:"*",
+        element:<Home/>
+      },
+   ]
   }]);
 
   function Home(){

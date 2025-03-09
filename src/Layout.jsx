@@ -10,7 +10,7 @@ function Layout() {
       <div className="flex  SecondContainer">
       {/* <Sidebar/> */}
       <div className="main-content fontSize outlet">
-      <MainScreen />
+      <Outlet />
       </div>
       </div>
       </main>

@@ -7,7 +7,7 @@ import Resume from "./Resume"
 function MainScreen() {
   return (
     <div className="flex flex-col gap-2" >
-      <Header/>
+      {/* <Header/> */}
         <About/>
         <Resume/>
         <Portfolio/>

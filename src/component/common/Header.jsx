@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
   const [routing, setRouting] = useState("about");
   let scrollRef=useRef();
+  let navigate=useNavigate();
   const scroll=(routing)=>{
     // scrollRef.current.scrollIntoView({behavior:'auto'});
 
@@ -18,6 +20,11 @@ function Header() {
   
     }
     }
+
+
+    useEffect(()=>{
+      scroll(routing)
+    },[routing])
 
   let route = [
     {
@@ -43,8 +50,9 @@ function Header() {
                 className={`navbar-link  ${ele.route == routing && "active"}`}
                 data-nav-link
                 onClick={() => {
-                  scroll(ele.route)
+                  navigate("/");
                   setRouting(ele.route);
+                 
                 }}
               >
                 {ele.route}

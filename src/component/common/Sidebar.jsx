@@ -6,7 +6,7 @@ import { ChevronDownOutline } from "react-ionicons";
 function Sidebar() {
   const [hideDetail, setHideDetail] = useState(true);
   return (
-    <div className="sidebar">
+    <div className="sidebar sm:!hidden ">
       <div>
         <button
           className="info_more-btn"

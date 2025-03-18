@@ -6,9 +6,9 @@ function Layout() {
   return (
     <>
       <main >
-      {/* <Header/> */}
-      <div className="flex  SecondContainer">
-      {/* <Sidebar/> */}
+      <Header/>
+      <div className="flex  gap-2 SecondContainer">
+      <Sidebar/>
       <div className="main-content fontSize outlet">
       <Outlet />
       </div>

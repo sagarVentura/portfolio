@@ -2344,11 +2344,11 @@
     }
      .sidebar-header{
       display:flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
     }
      .SecondContainer {
-      flex-direction: column;
+      flex-direction: row;
     }
   
     nav{

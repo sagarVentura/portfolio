@@ -67,10 +67,10 @@ function CustomComponent() {
             
             </div>
 
-            <div className="w-full h-full absolute z-[-1]  opacity-70"  
+            <div className="w-full h-full absolute z-[-1]  !bg-black opacity-70"  
             style={{
               backgroundImage: `url(${component.image})`,
-                backgroundSize: "cover",
+              backgroundSize:'cover',
               backgroundPosition: "center",
               
 

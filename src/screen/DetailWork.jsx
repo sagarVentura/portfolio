@@ -4,9 +4,11 @@ import { useEffect } from "react";
 
 let Details = {
   ventura: {
-    company: "Ventura Technologies",
+    company: "Ventura Elearning Global",
     roleDescription:
-      "Experienced React Developer expertise in mobile and web development, with proficiency across the project lifecycle. Skilled in creating responsive user interfaces using React and React Native, integrating robust backend solutions, and managing databases. Specializes in deploying applications on AWS for scalability and reliability. ",
+    "Develop and maintain web applications using React.js, Node.js, and MongoDB. Work on both frontend and backend development, ensuring smooth API integration, state management using React Context/Redux, and responsive UI design. Implement user authentication, security best practices, and performance optimization. Manage databases, write efficient queries, and handle data integration from multiple sources. Deploy and manage applications on AWS, ensuring scalability and reliability. Use Git for version control and collaborate with the team to improve application efficiency."
+    ,
+
     project: [
       {
         projectName: "SkillLelo",
@@ -46,8 +48,7 @@ let Details = {
 
   logicaldna: {
     company: "Logical DNA",
-    roleDescription:
-      "As a Software Developer specializing in web development, I design, develop, and maintain  web applications. build user-friendly front-end interfaces using JavaScript frameworks like React & SAP UI5 and develop server-side logic with Node.js",
+    roleDescription:"Full Stack Developer with Proficient in JavaScript, React js, SAP UI5, Node.js, Express.js, Mysql,and MongoDB. Skilled in API integration, user authentication, security compliance, and performance optimization. Experienced in working with Git for version control and ensuring cross-platform compatibility. Passionate about building efficient, secure, and high-performing applications. 🚀",
     project: [
       {
         projectName: "PoultryOS ERP",
@@ -127,3 +128,5 @@ function DetailWorkComponent({ data }) {
     </div>
   );
 }
+
+

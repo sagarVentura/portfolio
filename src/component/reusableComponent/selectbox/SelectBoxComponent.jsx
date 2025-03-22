@@ -92,6 +92,11 @@ function SelectBoxComponent() {
             });
             setTask(null)
         }
+        else{
+         setTaskList([]);
+         setTask(null)
+
+        }
     }, [project])
 
     const onChangeSelect = (project) => {
@@ -102,7 +107,16 @@ function SelectBoxComponent() {
         setTask(task)
     }
     return (
+        <>
+
         <div className="flex flex-wrap gap-10 justify-start items-start about active outlet flex-col sm:flex-row border-2  p-2 h-full" >
+
+        <div className=" w-full">
+                <label className="label font-bold text-xl" htmlFor="endDate">Select Box</label>
+
+               
+            </div>
+
             <div className=" flex flex-col flex-1 w-full">
                 <label className="required-label" htmlFor="endDate">Project Type</label>
 
@@ -131,6 +145,7 @@ function SelectBoxComponent() {
             </div>
 
         </div>
+        </>
     )
 }
 export default SelectBoxComponent
